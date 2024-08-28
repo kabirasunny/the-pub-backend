@@ -1,0 +1,9 @@
+package com.thepub.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.thepub.models.ThepubUser;
+
+interface ThepubUserRepo extends CrudRepository<ThepubUser, Integer>{
+
+}

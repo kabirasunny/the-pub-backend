@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.thepub.dao.ThepubUserDao&apos; to &apos;ThepubUserRepo&apos;&#x0D;&#x0A;- Original project: &apos;the-pub&apos;&#x0D;&#x0A;- Original element: &apos;com.thepub.dao.ThepubUserDao&apos;&#x0D;&#x0A;- Renamed element: &apos;com.thepub.dao.ThepubUserRepo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ThepubUserDao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.thepub.dao{ThepubUserDao.java[ThepubUserDao" matchStrategy="1" name="ThepubUserRepo" qualified="false" references="true" similarDeclarations="false" stamp="1724739193958" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,15 @@
+package com.thepub.service;
+
+import org.springframework.stereotype.Service;
+
+import com.thepub.models.ThepubUser;
+
+@Service
+public class ThepubUserService {
+
+
+
+	public ThepubUser registerUser(ThepubUser user) {
+		
+	}
+}

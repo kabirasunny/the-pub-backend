@@ -1,0 +1,5 @@
+package com.thepub.dao;
+
+interface ThepubUserRepo {
+
+}

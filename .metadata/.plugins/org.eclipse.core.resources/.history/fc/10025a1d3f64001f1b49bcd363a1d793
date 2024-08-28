@@ -1,0 +1,57 @@
+package com.thepub.models;
+
+public class ThepubUser {
+
+	private int id;
+	private String fullName;
+	private String email;
+	private long number;
+
+	public ThepubUser() {
+		super();
+	}
+
+	public ThepubUser(String fullName, String email, long number) {
+		this.fullName = fullName;
+		this.email = email;
+		this.number = number;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public long getNumber() {
+		return number;
+	}
+
+	public void setNumber(long number) {
+		this.number = number;
+	}
+
+	@Override
+	public String toString() {
+		return "ThepubUser [id=" + id + ", fullName=" + fullName + ", email=" + email + ", number=" + number + "]";
+	}
+
+}
