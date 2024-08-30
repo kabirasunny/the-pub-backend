@@ -12,7 +12,6 @@ import com.thepub.service.ThepubUserService;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin
 public class ThepubUserController {
 
 	@Autowired
