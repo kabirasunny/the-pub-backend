@@ -1,0 +1,10 @@
+package com.thepub.config;
+
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MyConfig extends SpringBootServletInitializer {
+
+//	public FilterRegisterationBean
+}
