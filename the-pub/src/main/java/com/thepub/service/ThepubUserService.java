@@ -13,10 +13,8 @@ public class ThepubUserService {
 	private ThepubUserRepo thePubUserRepo;
 
 //	save single user registeration
-	
 	public ThepubUser registerUser(ThepubUser user) {
 		ThepubUser userResult = this.thePubUserRepo.save(user);
 		return userResult;
-
 	}
 }
