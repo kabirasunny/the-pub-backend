@@ -8,14 +8,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-
 public class MyConfig  {
-
-
-	
-	
-	
-	
 	
 //	public FilterRegistrationBean coresFilter() {
 //		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -47,7 +40,6 @@ public class MyConfig  {
                 .allowedOrigins("http://localhost:5173") // Change to your allowed origins
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
-				 System.out.println("hello i am user");
 			}
 		};
 	}
