@@ -1,5 +1,7 @@
 package com.thepub.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +18,11 @@ public class ThepubUserService {
 	public ThepubUser registerUser(ThepubUser user) {
 		ThepubUser userResult = this.thePubUserRepo.save(user);
 		return userResult;
+	}
+	
+	// get data number
+	public ThepubUser getUser(long number){
+		ThepubUser resultUser = this.thePubUserRepo.findByNumber(number);
+		return resultUser;
 	}
 }
