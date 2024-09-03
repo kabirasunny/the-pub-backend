@@ -1,7 +1,0 @@
-package com.thepub.dao;
-
-import org.springframework.data.repository.CrudRepository;
-
-interface ThepubUserRepo extends CrudRepository<String, Integer>{
-
-}
