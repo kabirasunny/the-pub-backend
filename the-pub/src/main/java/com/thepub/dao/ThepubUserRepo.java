@@ -8,4 +8,5 @@ import com.thepub.models.ThepubUser;
 @Repository
 public interface ThepubUserRepo extends CrudRepository<ThepubUser, Integer>{
 
+	public ThepubUser findByNumber(long number);
 }
