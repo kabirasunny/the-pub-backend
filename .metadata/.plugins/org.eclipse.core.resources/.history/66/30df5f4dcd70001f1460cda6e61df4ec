@@ -1,0 +1,5 @@
+package thepub.service;
+
+public class ThepubCardsService {
+
+}

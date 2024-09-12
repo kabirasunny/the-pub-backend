@@ -1,0 +1,9 @@
+package com.thepub.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ThepubCardsController {
+
+	public Iterable<>
+}
