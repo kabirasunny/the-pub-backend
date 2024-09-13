@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Component
 @Entity
-@Table(name = "ThepubCards")
+@Table(name = "thepub_cards")
 public class ThepubCards {
 
 	@Id
@@ -18,19 +18,17 @@ public class ThepubCards {
 	private int id;
 	private String image;
 	private String title;
-	private double price;
 
 	public ThepubCards() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public ThepubCards(int id, String image, String title, double price) {
+	public ThepubCards(int id, String image, String title) {
 		super();
 		this.id = id;
 		this.image = image;
 		this.title = title;
-		this.price = price;
 	}
 
 	public int getId() {
@@ -57,17 +55,10 @@ public class ThepubCards {
 		this.title = title;
 	}
 
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
-	}
 
 	@Override
 	public String toString() {
-		return "ThepubCards [id=" + id + ", image=" + image + ", title=" + title + ", price=" + price + "]";
+		return "ThepubCards [id=" + id + ", image=" + image + ", title=" + title + "]";
 	}
 
 }
