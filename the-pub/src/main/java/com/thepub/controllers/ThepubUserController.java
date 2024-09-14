@@ -25,10 +25,15 @@ public class ThepubUserController {
 	
 	@PostMapping("/register")
 	public ThepubUser registerUser(@RequestBody ThepubUser thePubUser) {
+		if(thePubUser.getNumber() == 0) {
+			ThepubUser ur = thePubUser;
+			return ur;
+		}else {
+			System.out.println(thePubUser.getFullName()+" "+thePubUser.getEmail()+" "+thePubUser.getNumber());
+			ThepubUser userResult = this.thePubUserService.registerUser(thePubUser);
+			return userResult;
+		}
 		
-		System.out.println(thePubUser.getFullName()+" "+thePubUser.getEmail()+" "+thePubUser.getNumber());
-		ThepubUser userResult = this.thePubUserService.registerUser(thePubUser);
-		return userResult;
 	}
 	
 //	Get single data of user by number of the-pub website
