@@ -25,4 +25,9 @@ public class ThepubUserService {
 		ThepubUser resultUser = this.thePubUserRepo.findByNumber(number);
 		return resultUser;
 	}
+	
+	// get number for verify
+	public long findNumber(long num) {
+		return this.thePubUserRepo.findNumber(num);
+	}
 }
