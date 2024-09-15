@@ -41,7 +41,14 @@ public class ThepubUserController {
 	@GetMapping("/getData/{number}")
 	public ThepubUser getUser(@PathVariable long number) {
 		ThepubUser userResult = this.thePubUserService.getUser(number);
-		System.out.println(userResult);
-		return userResult;
+		if(userResult.getNumber()==number) {
+			System.out.println("it is wrong number");
+			System.out.println(userResult);
+			return userResult;
+		}else {
+			ThepubUser resultUser = userResult;
+			return resultUser;
+		}
+		
 	}
 }
