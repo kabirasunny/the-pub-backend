@@ -42,7 +42,6 @@ public class ThepubUserController {
 	public ThepubUser getUser(@PathVariable long number) {
 		ThepubUser userResult = this.thePubUserService.getUser(number);
 		if(userResult.getNumber()==number) {
-			System.out.println("it is wrong number");
 			System.out.println(userResult);
 			return userResult;
 		}else {
