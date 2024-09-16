@@ -1,0 +1,5 @@
+package com.thepub.controllers;
+
+public class ThepubTableController {
+
+}

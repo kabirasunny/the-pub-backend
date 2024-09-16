@@ -1,0 +1,5 @@
+package com.thepub.models;
+
+public class ThepubTable {
+
+}
