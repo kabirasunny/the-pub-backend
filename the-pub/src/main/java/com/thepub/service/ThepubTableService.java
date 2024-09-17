@@ -15,4 +15,8 @@ public class ThepubTableService {
 	public ThepubTable saveTable(ThepubTable table) {
 		return this.repository.save(table);
 	}
+	
+	public Iterable<ThepubTable> getTable(){
+		return this.repository.findAll();
+	}
 }
