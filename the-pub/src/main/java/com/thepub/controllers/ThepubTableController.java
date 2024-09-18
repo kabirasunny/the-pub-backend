@@ -18,7 +18,7 @@ public class ThepubTableController {
 	@PostMapping("/table")
 	public String saveTable(@RequestBody ThepubTable table) {
 		this.service.saveTable(table);
-		return "Data successfully submit";
+		return "Your table reserved successfully";
 	}
 	
 	@GetMapping("/booking")
