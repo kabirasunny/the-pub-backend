@@ -14,7 +14,7 @@ import jakarta.persistence.Table;
 public class ThepubCards {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String image;
 	private String title;
