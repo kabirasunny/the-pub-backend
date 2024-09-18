@@ -1,0 +1,18 @@
+package com.thepub.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.thepub.dao.ThepubContactRepo;
+
+@Service
+public class ThepubContact {
+
+	@Autowired
+	private ThepubContactRepo repository;
+	
+	public ThepubContact saveContact(ThepubContact contact) {
+		ThepubContact result =this.repository.save(contact);
+		return result;
+	}
+}
