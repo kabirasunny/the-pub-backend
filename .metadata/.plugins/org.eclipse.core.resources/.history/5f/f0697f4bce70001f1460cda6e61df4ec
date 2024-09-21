@@ -1,9 +1,0 @@
-package com.thepub.dao;
-
-import org.springframework.data.repository.CrudRepository;
-
-import com.thepub.models.ThepubCards;
-
-public interface ThepubCardsRepo extends CrudRepository<ThepubCards, Integer>{
-
-}
