@@ -14,17 +14,21 @@ public class ThepubTableController {
 
 	@Autowired
 	private ThepubTableService service;
-	
+
 	@PostMapping("/table")
 	public String saveTable(@RequestBody ThepubTable table) {
-		this.service.saveTable(table);
-		return "Your table reserved successfully";
+		if (table.getNumber() == 0) {
+			return "Please login before table reserve!";
+		} else {
+			this.service.saveTable(table);
+			return "Your table reserved successfully";
+		}
 	}
-	
+
 	@GetMapping("/booking")
-	public Iterable<ThepubTable> getTable(){
+	public Iterable<ThepubTable> getTable() {
 		System.out.println("hello");
 		return this.service.getTable();
-		
+
 	}
 }
