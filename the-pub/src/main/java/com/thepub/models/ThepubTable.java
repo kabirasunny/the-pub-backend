@@ -2,6 +2,7 @@ package com.thepub.models;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,6 +20,7 @@ public class ThepubTable {
 	private String guests;
 	private String date;
 	private String time;
+	@Column(name ="number", nullable = false)
 	private long number;
 
 	public ThepubTable() {
