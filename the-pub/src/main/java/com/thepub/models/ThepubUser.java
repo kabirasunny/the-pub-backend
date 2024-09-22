@@ -14,14 +14,11 @@ import jakarta.persistence.Table;
 @Table(name = "thepub_user")
 public class ThepubUser {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "Id")
-	private int id;
 	@Column(name = "FullName")
 	private String fullName;
 	@Column(name = "Email")
 	private String email;
+	@Id
 	@Column(name = "Number")
 	private long number;
 
@@ -33,14 +30,6 @@ public class ThepubUser {
 		this.fullName = fullName;
 		this.email = email;
 		this.number = number;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getFullName() {
@@ -69,7 +58,7 @@ public class ThepubUser {
 
 	@Override
 	public String toString() {
-		return "ThepubUser [id=" + id + ", fullName=" + fullName + ", email=" + email + ", number=" + number + "]";
+		return "ThepubUser [ fullName=" + fullName + ", email=" + email + ", number=" + number + "]";
 	}
 
 }
