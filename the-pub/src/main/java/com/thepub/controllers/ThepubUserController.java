@@ -24,20 +24,17 @@ public class ThepubUserController {
 // Save single data of user the-pub website
 	
 	@PostMapping("/register")
-	public ThepubUser registerUser(@RequestBody ThepubUser thePubUser) {
-		if(thePubUser.getNumber() == 0) {
-			ThepubUser ur = thePubUser;
-			return ur;
-		}else {
-			System.out.println(thePubUser.getFullName()+" "+thePubUser.getEmail()+" "+thePubUser.getNumber());
-			ThepubUser userResult = this.thePubUserService.registerUser(thePubUser);
-			return userResult;
+	public String registerUser(@RequestBody ThepubUser thePubUser) {
+		try {
+			ThepubUser result = this.thePubUserService.registerUser(thePubUser);
+			return "Successfully registration";
+			
+		} catch (Exception e) {
+			return "this number is already registered";
 		}
-		
 	}
 	
 //	Get single data of user by number of the-pub website
-	
 	@GetMapping("/getData/{number}")
 	public ThepubUser getUser(@PathVariable long number) {
 		ThepubUser userResult = this.thePubUserService.getUser(number);
