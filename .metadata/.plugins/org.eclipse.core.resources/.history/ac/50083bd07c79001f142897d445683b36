@@ -1,0 +1,14 @@
+package com.thepub.dao;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.thepub.models.ThepubCards;
+
+@Repository
+public interface ThepubCardsRepo extends CrudRepository<ThepubCards, Integer>{
+
+	@Query("DELETE u FROM thepub_cards u WHERE u.title=:title")
+	public void deleteByTitle(String title);
+}
