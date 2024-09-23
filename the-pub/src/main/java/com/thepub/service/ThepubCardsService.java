@@ -21,4 +21,9 @@ public class ThepubCardsService {
 		Iterable<ThepubCards> allCards = this.thePubCardsRepo.findAll();
 		return allCards;
 	}
+	
+	public void deleteCard(String title) {
+		System.out.println(title+"service");
+		this.thePubCardsRepo.deleteTitle(title);
+	}
 }
