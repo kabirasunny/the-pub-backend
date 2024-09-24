@@ -19,7 +19,7 @@ public class ThepubCardsController {
 	private ThepubCardsService thePubCardsService;
 
 	@PostMapping("/allCards")
-	public String setCards(@ModelAttribute ThepubCards cards) {
+	public String setCards(@RequestBody ThepubCards cards) {
 		ThepubCards card = this.thePubCardsService.setCards(cards);
 		return "Your card has been added successful !";
 	}
