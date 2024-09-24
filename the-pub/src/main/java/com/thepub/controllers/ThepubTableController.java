@@ -2,6 +2,7 @@ package com.thepub.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,10 +26,10 @@ public class ThepubTableController {
 		}
 	}
 
-	@GetMapping("/booking")
-	public Iterable<ThepubTable> getTable() {
+	@GetMapping("/booking/{number}")
+	public Iterable<ThepubTable> getTable(@PathVariable long number) {
 		System.out.println("hello");
-		return this.service.getTable();
+		return this.service.getTable(number);
 
 	}
 }
