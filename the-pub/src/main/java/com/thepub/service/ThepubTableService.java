@@ -16,7 +16,7 @@ public class ThepubTableService {
 		return this.repository.save(table);
 	}
 	
-	public Iterable<ThepubTable> getTable(){
-		return this.repository.findAll();
+	public Iterable<ThepubTable> getTable(long number){
+		return this.repository.findByNumber(number);
 	}
 }
